@@ -122,12 +122,8 @@ h1  {
     align-items: center;
     height: 211px;
     justify-content: space-evenly;
-
-
-
-
-
 }
+
 
 .pelito{ 
     height: 300px;
@@ -139,8 +135,7 @@ h1  {
     margin-left: 10px;
     display: flex;
     justify-content: space-evenly;
-    
- }
+}
 
 
 
@@ -149,7 +144,7 @@ h1  {
 transform: scale(1.5,1.5);
 width: 150px ;
 height: 200px;
-border-style: hidden;
+border-style: groove;
 border-color: gray;
 }
 .nosotros{
@@ -167,9 +162,15 @@ border-color: gray;
     align-items: center;
 }
 .imagenes{
+    height: 300px;
+    width: auto;
+    padding: 50px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
     display: flex;
-    justify-content: center;
-    margin: auto;
+    justify-content: space-evenly;
 }
 
 .mapa{  
