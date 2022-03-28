@@ -117,17 +117,21 @@ h1  {
     border-radius: 5px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 15px;
+    margin-left: 10px;
     display: flex;
     justify-content: space-evenly;
+    
  }
 
 
-.pelito img  {
+
+.pelito img:hover {
+   
+transform: scale(1.5,1.5);
 width: 150px ;
 height: 200px;
-
-
+border-style: hidden;
+border-color: gray;
 }
 .nosotros{
     color: #000000;
