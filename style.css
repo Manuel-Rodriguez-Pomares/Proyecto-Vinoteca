@@ -59,17 +59,18 @@ ul {
 
 }
 .logo:hover {
-    transform: scale(1.2,1.2);
+    transform: translate(5px,5px);
 }
 
-nav{    
-    padding: 0 45px;
+    nav {    
+    padding:0 45px;
     max-width: 992px;
     text-transform: uppercase;
     width: max-content;
     
 }
-a        {
+
+a {
     text-decoration: none;
     font-size: 18px;
 }
@@ -104,12 +105,30 @@ h1  {
 .galleta{   
     display: flex;
     flex-direction: column;
-
     margin-top: 40px;
     height: 30vh;
-    
-    
 }
+
+.galletita{ 
+
+    display: flex;
+    justify-content: center;
+    height: 42vh;
+    align-items: center;
+}
+.placeholder{   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 211px;
+    justify-content: space-evenly;
+
+
+
+
+
+}
+
 .pelito{ 
     height: 300px;
     width: auto ;
