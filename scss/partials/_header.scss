@@ -1,0 +1,37 @@
+header   {  
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav-menu-link{ 
+        padding: 8px 12px;
+        border-radius: 3px;
+        color: white;
+        .nav-menu-link:hover{
+            background-color: #252525; 
+            transition: 0.5s;
+            ul {
+                list-style:none ;  
+                li  {
+                    display: inline;
+                    padding: 10px;
+                    
+                    
+                } 
+            }
+           
+        }
+   
+    }
+
+
+  
+
+
+
+
+
+
+
+}
