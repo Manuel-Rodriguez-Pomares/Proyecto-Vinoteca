@@ -1,10 +1,26 @@
-@import "./partials/header"; 
-@import"./partials/body";
+@import "./partials/header";
+
 * {
  margin: 0;
  padding: 0;
  box-sizing: border-box; 
 }
-$myFont:'Roboto', sans-serif ;
-$myColor: antiquewhite;
-$mybackground-color: rgb(253, 253, 249);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body {
+ font-family: 'Roboto', sans-serif;
+color: antiquewhite;
+background-color: rgb(253, 253, 249);
+
+}
+
+
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; 
+}
+
+
+
