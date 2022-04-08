@@ -1,11 +1,6 @@
-@import "./partials/header";
-
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box; 
-}
-
+@import"./base/variables";
+@import"./partials/header";
+@import "./partials/main";
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
@@ -16,11 +11,6 @@ background-color: rgb(253, 253, 249);
 }
 
 
-* {
- margin: 0;
- padding: 0;
- box-sizing: border-box; 
-}
 
 
 

@@ -1,5 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-header {
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+.grid-header {
+  height: 100px;
+}
+
+.grid-header header {
   background-color: black;
   position: fixed;
   width: 100%;
@@ -14,19 +29,19 @@ header {
           align-items: center;
 }
 
-header .logo {
+.grid-header header .logo {
   height: 100px;
   width: auto;
   margin-left: 20px;
   padding-top: 5px;
 }
 
-header .logo .logo:hover {
+.grid-header header .logo .logo:hover {
   -webkit-transform: translate(5px, 5px);
           transform: translate(5px, 5px);
 }
 
-header nav {
+.grid-header header nav {
   padding: 0 45px;
   max-width: 992px;
   text-transform: uppercase;
@@ -35,37 +50,23 @@ header nav {
   width: max-content;
 }
 
-header nav ul {
+.grid-header header nav ul {
   list-style: none;
 }
 
-header nav ul li {
+.grid-header header nav ul li {
   display: inline;
   padding: 10px;
 }
 
-header nav ul li a {
+.grid-header header nav ul li a {
   text-decoration: none;
   font-size: 18px;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: antiquewhite;
   background-color: #fdfdf9;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 /*# sourceMappingURL=style.css.map */
