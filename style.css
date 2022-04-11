@@ -36,6 +36,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 100px;
 }
 
 li  {
@@ -86,9 +87,35 @@ a {
     transition: 0.5s;
 }
 
+.perro-nav{ 
+display: flex;
+justify-content: flex-end;
+
+}
+.perro-caliente{    
+width: 100%;
+max-width: 100%;
+background-color: black;
+
+}
+.gatito{    
+color:white;
 
 
+}
+.img-fluid{ 
+    height: 86px;
+    width: 86px;
+}
 
+.caballo{   
+height: 100px;
+
+}
+.monito {
+background-color: white;
+    
+}
 
 /* main */
 
