@@ -141,13 +141,14 @@ main .container-master {
   padding-bottom: 20px;
 }
 
-main .container-master .container-products {
+main .container-master .container-products  {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (0.5fr)[3];
       grid-template-columns: repeat(3, 0.5fr);
   grid-gap: 10px;
 }
+
 
 main .container-master .container-products .product {
   border: 1px solid #ccc;
