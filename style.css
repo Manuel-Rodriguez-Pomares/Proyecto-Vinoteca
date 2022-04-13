@@ -37,7 +37,6 @@
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    z-index: 1;
 }
 
 li  {
@@ -247,9 +246,6 @@ justify-content: center;
 
 display: flex;
 justify-content: center;
-
-
-
 }
 button  {
 

@@ -1,0 +1,93 @@
+   
+main{   
+   
+   
+    h1  {
+        color: #000000;
+        display: flex;
+        justify-content: center;
+    }
+    .sale-title{    
+        color: black;
+        @include flex(flex, center);
+        padding: 20px;
+        font-family: 'Playfair Display', serif;
+          font-weight: 700;
+            font-size: map-get($colores, font-s );
+            text-transform: uppercase;
+        }
+
+        .container-master{  
+            @include flex(flex, center);
+            padding-bottom: 20px;
+            .container-products{    
+
+               @extend %grid;
+                .product{   
+
+                    border: 1px solid #ccc;
+                    padding: 20px;
+                    .product-title{ 
+                        color: black;
+                        font-size: map-get($colores, font-t );
+                        @include flex(flex, center);
+                        }
+                        
+                        
+                        .product-price {       
+                            color: black;
+                            display: flex;
+                            justify-content: center;
+                        }
+                        .boton-carrito{ 
+
+                            display: flex;
+                            justify-content: center;
+                            button  {
+
+                                border: 1px solid #dddddd;
+                                display: inline-block;
+                                color: #000000;
+                                background-color: map-get($colores, bg-color );
+                                padding: 5px 20px;
+                                box-sizing: border-box;
+                                line-height: 1.5 ;
+                                text-transform: uppercase;
+                                button:hover    {
+
+                                    border:1px solid black;
+                                    }
+                            }
+                            }
+                           
+                    }
+                }
+            }
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
