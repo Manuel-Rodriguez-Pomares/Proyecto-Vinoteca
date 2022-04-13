@@ -9,34 +9,28 @@ main{
     }
     .sale-title{    
         color: black;
-        display: flex;
-        justify-content: center;
+        @include flex(flex, center);
         padding: 20px;
         font-family: 'Playfair Display', serif;
           font-weight: 700;
-            font-size: 36px;
+            font-size: map-get($colores, font-s );
             text-transform: uppercase;
         }
 
         .container-master{  
-
-            display: flex;
-            justify-content: center;
+            @include flex(flex, center);
             padding-bottom: 20px;
             .container-products{    
 
-                display: grid;
-                grid-template-columns: repeat(3, 0.5fr);
-                grid-gap: 10px;
+               @extend %grid;
                 .product{   
 
                     border: 1px solid #ccc;
                     padding: 20px;
                     .product-title{ 
                         color: black;
-                        font-size: 20px;
-                        display: flex;
-                        justify-content: center;
+                        font-size: map-get($colores, font-t );
+                        @include flex(flex, center);
                         }
                         
                         
@@ -54,7 +48,7 @@ main{
                                 border: 1px solid #dddddd;
                                 display: inline-block;
                                 color: #000000;
-                                background-color: rgba(255, 255, 255, 0.2);
+                                background-color: map-get($colores, bg-color );
                                 padding: 5px 20px;
                                 box-sizing: border-box;
                                 line-height: 1.5 ;
