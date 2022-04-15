@@ -20,7 +20,15 @@ main{
         .container-master{  
             @include flex(flex, center);
             padding-bottom: 20px;
-            .container-products{    
+            .container-products{  
+                @media screen and (max-width:768px) {
+
+                    .container-products{    
+                
+                        display: grid;
+                        grid-template-columns: repeat(2, 0.5fr);
+                        }
+                }  
 
                @extend %grid;
                 .product{   

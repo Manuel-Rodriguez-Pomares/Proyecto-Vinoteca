@@ -1,4 +1,14 @@
+/* mapas */
+/* extend */
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+main .container-master .container-products {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (0.5fr)[3];
+      grid-template-columns: repeat(3, 0.5fr);
+  grid-gap: 10px;
+}
+
 .grid-header {
   height: 76px;
 }
@@ -54,12 +64,13 @@ main .container-master {
   padding-bottom: 20px;
 }
 
-main .container-master .container-products {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (0.5fr)[3];
-      grid-template-columns: repeat(3, 0.5fr);
-  grid-gap: 10px;
+@media screen and (max-width: 768px) {
+  main .container-master .container-products .container-products {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.5fr)[2];
+        grid-template-columns: repeat(2, 0.5fr);
+  }
 }
 
 main .container-master .container-products .product {
@@ -119,14 +130,86 @@ body {
   background-color: #fdfdf9;
 }
 
-footer {
-  background-color: #000000;
+.pie-pagina {
+  width: 100%;
+  background-color: black;
+}
+
+.pie-pagina .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 45px 0px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+}
+
+.pie-pagina .grupo-1 figure {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pie-pagina .grupo-1 figure img {
+  width: 200px;
+}
+
+.pie-pagina .grupo-1 h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie-pagina .grupo-1 p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 a {
+  display: inline-block;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-decoration: none;
+  color: #fff;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  text-align: center;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.pie-pagina .grupo-1 a a:hover {
+  color: #0547DC;
+}
+
+.pie-pagina .grupo-2 {
+  color: #fff;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .pie-pagina .grupo-2 small .grupo-1 {
+    width: 100%;
+    padding: 35px 0px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+  }
 }
 
 @media screen and (max-width: 768px) {

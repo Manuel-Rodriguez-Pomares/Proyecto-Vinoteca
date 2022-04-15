@@ -1,6 +1,39 @@
-@mixin flex($display, $horizontal, $vertical) {
+@mixin flex($display, $horizontal) {
 
     display: $display;
     justify-content: $horizontal;
-    align-items: $vertical;
+    
+}
+
+@mixin grid($display,$vertical,$gap) {
+    display:$display ;
+    grid-template-columns:$vertical ;
+    grid-gap:$gap ;
+    
+}
+/* mapas */
+
+$colores:(
+color:black,
+color-2: #fff,
+color-3: #0547DC,
+font-s:36px,
+font-t:20px,
+bg-color: rgba(255, 255, 255, 0.2),
+bg-color-2:grey,
+
+);
+/* extend */
+
+%grid{  
+    display: grid;
+    grid-template-columns: repeat(3, 0.5fr);
+    grid-gap: 10px;
+}
+
+%flex{  
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
