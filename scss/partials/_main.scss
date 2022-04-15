@@ -72,7 +72,58 @@ main{
                 }
             }
 
+ form   {
+     width: 450px;
+     margin: auto;
+     background: rgba(0,0,0,0.4);
+     padding: 10px 20px;
+     border-radius: 7px;
+     margin-top: 20px;
+     .especial  {
+         margin: 0;
+         font-size: 30px;
+         margin-bottom: 20px;
 
+
+
+     }
+     .cuadrado-1    {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 17px;
+        border: none;
+
+     }
+     .cuadrado{ 
+         width: 100%;
+         margin-bottom: 20px;
+         padding: 20px;
+         font-size: 17px;
+         border: none;
+         min-height: 100px;
+         max-height: 200px;
+     }
+     #boton{    
+         background-color: #31384A;
+         color:map-get($colores,color-2 ) ;
+         padding: 20px;
+         #boton:hover   {
+             cursor: pointer;
+         }
+     }
+     
+@media screen and (max-width:768px) {
+
+    form{   
+        width: 100%;
+    }
+}
+     
+     
+
+
+
+ }
     
 }
 
