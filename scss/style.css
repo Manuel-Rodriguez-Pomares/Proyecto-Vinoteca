@@ -131,6 +131,7 @@ main form {
   padding: 10px 20px;
   border-radius: 7px;
   margin-top: 20px;
+  margin-bottom: 150px;
 }
 
 main form .especial {
@@ -170,6 +171,40 @@ main form #boton #boton:hover {
   main form form {
     width: 100%;
   }
+}
+
+main .nosotros {
+  height: 856px;
+}
+
+main .nosotros-contenido {
+  color: black;
+}
+
+main .imagen-nosotros {
+  width: 1652px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .imagen-nosotros .img-nosotros {
+  height: 400px;
+  width: 800px;
+}
+
+main .mapa {
+  width: 1652px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 800px;
 }
 
 body {

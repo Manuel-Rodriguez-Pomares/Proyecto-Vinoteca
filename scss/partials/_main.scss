@@ -79,6 +79,7 @@ main{
      padding: 10px 20px;
      border-radius: 7px;
      margin-top: 20px;
+     margin-bottom: 150px;
      .especial  {
          margin: 0;
          font-size: 30px;
@@ -124,8 +125,37 @@ main{
 
 
  }
-    
+ 
+.nosotros{    
+    height: 856px;
+ 
+ 
 }
+.nosotros-contenido{    
+    color: black;
+}
+
+.imagen-nosotros{
+    width: 1652px;  
+    display: flex;
+    justify-content: center;
+    .img-nosotros   {
+        height: 400px;
+          width: 800px;
+      
+      } 
+
+}
+.mapa{  
+    width: 1652px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 800px;
+}
+
+}
+    
+
 
 
 
