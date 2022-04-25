@@ -4,7 +4,7 @@
 main .container-master .container-products {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (4,0.5fr);
+  -ms-grid-columns: (0.5fr)[3];
       grid-template-columns: repeat(3, 0.5fr);
   grid-gap: 10px;
 }
@@ -27,6 +27,19 @@ main .container-master .container-products {
           align-items: center;
   height: 76px;
   z-index: 1;
+}
+
+.grid-header header .navbar-collapse {
+  background: rgba(36, 38, 41, 0.7);
+}
+
+.grid-header header .navbar-collapse .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 main h1 {
@@ -68,7 +81,7 @@ main .container-master {
   main .container-master .container-products .container-products {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (2,0.5fr);
+    -ms-grid-columns: (0.5fr)[2];
         grid-template-columns: repeat(2, 0.5fr);
   }
 }
@@ -120,7 +133,7 @@ main .container-master .container-products .product .boton-carrito button {
   text-transform: uppercase;
 }
 
-main .container-master .container-products .product .boton-carrito button button:hover {
+main .container-master .container-products .product .boton-carrito button:hover {
   border: 1px solid black;
 }
 
@@ -173,27 +186,23 @@ main form #boton #boton:hover {
   }
 }
 
-main .nosotros {
+main .nosotros-img {
+  background-image: url(/img/nosotros.jpg);
+  background-size: cover;
+}
+
+main .nosotros-img .nosotros {
   height: 856px;
 }
 
-main .nosotros-contenido {
-  color: black;
+main .nosotros-img .titulo-nosotros {
+  color: white;
+  padding-top: 20px;
 }
 
-main .imagen-nosotros {
-  width: 1652px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-main .imagen-nosotros .img-nosotros {
-  height: 400px;
-  width: 800px;
+main .nosotros-img .nosotros-contenido {
+  color: white;
+  margin: 50px;
 }
 
 main .mapa {
@@ -225,7 +234,7 @@ body {
   padding: 45px 0px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (3,1fr);
+  -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
 }
@@ -289,7 +298,7 @@ body {
     padding: 35px 0px;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1,1fr);
+    -ms-grid-columns: (1fr)[1];
         grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
   }
@@ -299,7 +308,7 @@ body {
   .container-products {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (2,0.5fr);
+    -ms-grid-columns: (0.5fr)[2];
         grid-template-columns: repeat(2, 0.5fr);
   }
 }

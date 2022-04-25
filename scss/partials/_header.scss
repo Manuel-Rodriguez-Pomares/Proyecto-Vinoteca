@@ -16,6 +16,13 @@ height: 76px;
     align-items: center;
     height: 76px;
     z-index: 1;
+    .navbar-collapse{   
+      background: rgba(36, 38, 41, 0.7);
+      .nav-item{  
+         display: flex;
+         justify-content: center;
+      }
+    }
     
     }
 
