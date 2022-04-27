@@ -1,6 +1,9 @@
+
+
 .pie-pagina {
  width: 100%;
  background-color: black;
+
  .grupo-1{  
      width: 100%;
      max-width: 1200px;
@@ -41,8 +44,13 @@
              color: map-get($colores, color-3);
          }
          
-         
      }
+     
+     .logo-footer{  
+        width: 250px;
+        height: 250px;
+        background-color: black;
+    }
      @include grid(grid,repeat(3,1fr),50px )
      
      
@@ -52,24 +60,11 @@
     padding: 15px 10px ;
     text-align: center;
     color:map-get($colores, color-2) ;
-    small{  
-        @media screen and (max-width: 800px){   
-            
-           .grupo-1{   
-            width: 100%;
-            padding: 35px 0px;
-            
-          @include grid(grid,repeat(1,1fr),30px ) 
-
-
-
-           }     
-
-
-        }
+     
+        
             
         
-    }
+    
 
 
 

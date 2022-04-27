@@ -8,7 +8,7 @@ main{
         justify-content: center;
     }
     .sale-title{    
-        color: black;
+        color: #333;
         @include flex(flex, center);
         padding: 20px;
         font-family: 'Playfair Display', serif;
@@ -16,29 +16,40 @@ main{
             font-size: map-get($colores, font-s );
             text-transform: uppercase;
         }
+        
+        @media screen and (max-width:768px) {
+
+            .container-master .container-products{    
+        
+                display: grid;
+                grid-template-columns: repeat(2, 0.5fr);
+                
+                
+                }
+        }
 
         .container-master{  
             @include flex(flex, center);
             padding-bottom: 20px;
-            .container-products{  
-                @media screen and (max-width:768px) {
-
-                    .container-products{    
-                
-                        display: grid;
-                        grid-template-columns: repeat(2, 0.5fr);
-                        }
-                }  
-
-               @extend %grid;
+            
+            .container-products{ 
+                @extend %grid;
+               
+               
+               
                 .product{   
 
                     border: 1px solid #ccc;
                     padding: 20px;
                     .product-title{ 
                         color: black;
-                        font-size: map-get($colores, font-t );
+                        font-size: map-get($colores, font-e );
                         @include flex(flex, center);
+                        margin-top: 9px;
+                        font-family: 'Source Sans Pro', sans-serif;
+                           font-weight: 600;
+                           text-transform: none;
+                        
                         }
                         
                         
@@ -113,12 +124,7 @@ main{
          }
      }
      
-@media screen and (max-width:768px) {
 
-    form{   
-        width: 100%;
-    }
-}
      
      
 

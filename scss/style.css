@@ -53,7 +53,7 @@ main h1 {
 }
 
 main .sale-title {
-  color: black;
+  color: #333;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,6 +67,15 @@ main .sale-title {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 768px) {
+  main .container-master .container-products {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (0.5fr)[2];
+        grid-template-columns: repeat(2, 0.5fr);
+  }
+}
+
 main .container-master {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,15 +86,6 @@ main .container-master {
   padding-bottom: 20px;
 }
 
-@media screen and (max-width: 768px) {
-  main .container-master .container-products .container-products {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (0.5fr)[2];
-        grid-template-columns: repeat(2, 0.5fr);
-  }
-}
-
 main .container-master .container-products .product {
   border: 1px solid #ccc;
   padding: 20px;
@@ -93,13 +93,17 @@ main .container-master .container-products .product {
 
 main .container-master .container-products .product .product-title {
   color: black;
-  font-size: 20px;
+  font-size: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 9px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  text-transform: none;
 }
 
 main .container-master .container-products .product .product-price {
@@ -178,12 +182,6 @@ main form #boton {
 
 main form #boton #boton:hover {
   cursor: pointer;
-}
-
-@media screen and (max-width: 768px) {
-  main form form {
-    width: 100%;
-  }
 }
 
 main .nosotros-img {
@@ -356,6 +354,12 @@ body {
   color: #0547DC;
 }
 
+.pie-pagina .grupo-1 .logo-footer {
+  width: 250px;
+  height: 250px;
+  background-color: black;
+}
+
 .pie-pagina .grupo-2 {
   color: #fff;
   padding: 15px 10px;
@@ -363,24 +367,9 @@ body {
   color: #fff;
 }
 
-@media screen and (max-width: 800px) {
-  .pie-pagina .grupo-2 small .grupo-1 {
-    width: 100%;
-    padding: 35px 0px;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[1];
-        grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-  }
-}
-
 @media screen and (max-width: 768px) {
-  .container-products {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (0.5fr)[2];
-        grid-template-columns: repeat(2, 0.5fr);
+  form {
+    width: 100%;
   }
 }
 
