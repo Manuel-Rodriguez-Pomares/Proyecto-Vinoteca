@@ -185,8 +185,8 @@ main form #boton #boton:hover {
 }
 
 main .nosotros-img {
-  background-image: url(/img/nosotros.jpg);
-  background-size: cover;
+  background: #d40808;
+  background: radial-gradient(circle, rgba(212, 8, 8, 0.611082) 0%, #620404 36%);
   height: 700px;
 }
 
@@ -365,12 +365,6 @@ body {
   padding: 15px 10px;
   text-align: center;
   color: #fff;
-}
-
-@media screen and (max-width: 768px) {
-  form {
-    width: 100%;
-  }
 }
 
 * {
