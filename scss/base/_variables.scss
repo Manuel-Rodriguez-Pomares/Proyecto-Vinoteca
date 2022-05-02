@@ -30,7 +30,7 @@ bg-color-3: black,
 %grid{  
     display: grid;
     grid-template-columns: repeat(3, 0.5fr);
-    grid-gap: 10px;
+    gap: 10px;
 }
 
 %flex{  
